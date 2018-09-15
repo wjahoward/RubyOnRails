@@ -18,3 +18,5 @@ Once installed successfully, do the following to create a simple web app:
 8. Once loaded the URL, the end product should show something like *"Yay! You're on Rails!"*
 
 With that, congrats in finishing installing Ruby on Rails... Now, let's move on in having an introduction of what Ruby and Ruby on Rails are about respectively! :)
+
+Reference: https://www.youtube.com/watch?v=OHgXELONyTQ
