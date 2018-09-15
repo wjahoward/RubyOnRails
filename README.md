@@ -5,7 +5,7 @@ Installation and Introduction of Ruby on Rails
 
 To install Ruby on Rails on Windows 10:
 1. Go to http://railsinstaller.org/en
-2. Click 'Windows Ruby 2.3'
+2. Click `Windows Ruby 2.3`
 
 Once installed successfully, do the following to create a simple web app:
 1. Open `Command Prompt with Ruby and Rails`
