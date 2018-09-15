@@ -17,6 +17,6 @@ Once installed successfully, do the following to create a simple web app:
 7. Go to the browser by typing the url which is something like the following: *localhost:(your port number) i.e. localhost:3000*
 8. Once loaded the URL, the end product should show something like *"Yay! You're on Rails!"*
 
-With that, congrats in finishing installing Ruby on Rails... Now, let's move on in having an introduction of what Ruby and Ruby on Rails are about respectively! :)
+Congratulation, you have successfully installed Ruby on Rail!! :)
 
 Reference: https://www.youtube.com/watch?v=OHgXELONyTQ
