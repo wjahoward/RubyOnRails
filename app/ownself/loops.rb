@@ -1,6 +1,6 @@
 # loops
 
-# 1. for loop
+# 1. for loop (not exactly if comparing to the for loop in Java and C#)
 # inclusive / exclusive ranges
 
 for i in 0..5 # .. -> inclusive range
