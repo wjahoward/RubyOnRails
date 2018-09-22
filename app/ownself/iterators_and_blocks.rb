@@ -25,6 +25,12 @@ for (int i = 5; i > random.length; i--) {
 arrayTesting = [50,40,30]
 arrayTesting.sort! # in 
 
+# each and collect similar but different output
+# i.e. [1,2,3,4]
+# if use 'each', let say each number in array multiply by 2, the output of the array will still be [1,2,3,4] even though will still 
+# print 2,4,6,8
+# however if use 'collect', the output of the array will be [2,4,6,8] and print out also 2,4,6,8
+
 arrayTesting.each do |single|
     puts "This number is #{single}" 
 end
