@@ -42,4 +42,5 @@ end
 
 # in summary
 # yield is like returning something within the full method, but then you do not want to return so many times within a method
+# is like up to you like you want to control it, in a way you could expect each yield you made is something unique
 # so therefore, you should use yield
