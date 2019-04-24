@@ -27,10 +27,10 @@ i.e. `class MainpageController < ApplicationController
 After that, save it
 14. Create a view, named `hello` (app > views > right-click on mainpage > New File). Add the HTML message to this file
 I.e. `<h1>Hello World!</h1>`
-15. Create the route by editing the `routes.rb` file (config > routes.rb). Add the below line below the first line, so is something like this
-I.e. `Rails.application.routes.draw do
+15. Create the route by editing the `routes.rb` file (config > routes.rb). Add the below line below the first line, so is something like this:
+`Rails.application.routes.draw do
   root to: 'mainpage#hello'
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end`
 The above example tells Rails that the root directory `/` will serve up our controller's action
 16. Test the application again by typing `bundler exec rails server`
@@ -38,7 +38,7 @@ The above example tells Rails that the root directory `/` will serve up our cont
 
 **TBC**
 
-When you create a Ruby program through the command line, if you run the command rails generate scaffold, it will create all the **views, the controller, models and database schema** for you. 
+When you create a Ruby program through the command line, if you run the command `rails generate scaffold`, it will create all the **views, the controller, models and database schema** for you. 
 
 Below are the steps to do so:
 1. Open `Command Prompt with Ruby and Rails` application
