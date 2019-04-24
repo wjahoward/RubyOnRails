@@ -1,6 +1,6 @@
-# Installation and Ruby on Rails 
+# Installation and playing around Ruby on Rails 
 
-**Note: The installation process below is having an assumption that your laptop runs on Windows 10 as the Operating Software (OS) and the software being Visual Studio Code**
+**Note: The installation process below is having an assumption that your laptop runs on Windows 10 as the Operating Software (OS) and your code editor is using Visual Studio Code**
 
 To install Ruby on Rails on Windows 10:
 1. Go to http://railsinstaller.org/en
