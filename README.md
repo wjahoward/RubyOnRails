@@ -36,8 +36,6 @@ The above example tells Rails that the root directory `/` will serve up our cont
 16. Test the application again by typing `bundler exec rails server`
 17. 'Hello World' will be shown
 
-**TBC**
-
 When you create a Ruby program through the command line, if you run the command `rails generate scaffold`, it will create all the **views, the controller, models and database schema** for you. 
 
 Below are the steps to do so:
