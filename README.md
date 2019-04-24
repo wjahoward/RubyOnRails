@@ -1,29 +1,3 @@
-<<<<<<< HEAD
-# README
-
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-=======
 # Installation and Ruby on Rails 
 
 **Note: The installation process below is having an assumption that your laptop runs on Windows 10 as the Operating Software (OS) and the software being Visual Studio Code**
@@ -79,7 +53,3 @@ Below are the steps to do so:
 10. You can play around with the URL - basically is to test out Create, Read, Update, Delete (CRUD)
 
 Congratulation, you have successfully installed Ruby on Rails!! :)
-----------------------------------------------------------------------------------------------------------------------------------------
-
-
->>>>>>> 9b964de43785619529a99cc4ab5c0abe7dc056c7
