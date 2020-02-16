@@ -1,53 +1,79 @@
-# Installation and playing around Ruby on Rails 
+# Ruby on Rails installation
 
-**Note: The installation process below is having an assumption that your laptop runs on Windows 10 as the Operating Software (OS) and your code editor is using Visual Studio Code**
+## Getting Started
 
-To install Ruby on Rails on Windows 10:
-1. Go to http://railsinstaller.org/en
-2. Click `Windows Ruby 2.3`
+These instructions will get you to be able to install Ruby on Rails (RoR) and run a simple RoR application.
 
-Once installed successfully, do the following to create a simple web app:
-1. Open `Command Prompt with Ruby and Rails` application
-2. Type `gem install bundler`. You may get a Firewall notification, just click `Allow Access`
-3. To verify ruby has installed, type `ruby -v`; To verify rails has installed, type `rails -v` 
-4. Type `rails new test_app` - rails new (name of solution)
-5. Type `cd test_app` - change directory to name of solution
-6. Type `bundler exec rails server` - runs on rails application
-7. Go to the browser by typing the url which is something like the following: *localhost:(your port number) i.e. localhost:3000*
-8. Once loaded the URL, the end product should show something like *"Yay! You're on Rails!"*
-9. Once installed successfully, `Ctrl-C` to stop
-10. We will begin by generating a controller called `mainpage`: `rails generate controller mainpage`
-11. Open Visual Studio Code, and open that folder named 'test_app'
-12. Go to `mainpage_controller.rb` (app > controllers > mainpage_controller.rb)
-13. Then, add an action named `hello`. 
+### Prerequisites
+
+What things you need to install the software
+```
+1. Operating System: Windows 10, macOS or Linux
+2. Just any IDE i.e. Visual Studio Code, Sublime Text, etc
+```
+
+### Installing 
+
+To install Ruby on Rails:
+```
+1. Go to https://www.ruby-lang.org/en/downloads/
+2. Download the latest version under `Stable releases`
+```
+
+Once installed successfully, verify that ruby and rails have been installed respectively:
+```
+1. Open your terminal
+2. `$ ruby -v` 
+3. `$ rails -v` 
+```
+
+## Creating a RoR app
+
+Now we have installed Ruby and Rails, let's setup a simple RoR app:
+```
+1. Open your terminal
+2. `$ gem install bundler` 
+NOTE: If you get a Firewall notification, just click `Allow Access`
+3. `$ rails new (name of application)` i.e. `$ rails new test_app`
+4. `$ cd test_app`
+5. `$ rails server` 
+6. Open your browser, type the following: `localhost:(your port number)` i.e. `localhost:3000`
+7. You should see something like *"Yay! You're on Rails!"*
+```
+Let's move on and create a controller:
+```
+1. `$ rails generate controller (name of controller)` i.e. `$ rails generate controller mainpage`
+2. Open your IDE, and navigate to your RoR app directory, which is named 'test_app'
+3. Navigate to `mainpage_controller.rb`
+4. Add a empty method called `hello`
 i.e. `class MainpageController < ApplicationController
         def hello
         end
     end`
-After that, save it
-14. Create a view, named `hello` (app > views > right-click on mainpage > New File). Add the HTML message to this file
-I.e. `<h1>Hello World!</h1>`
-15. Create the route by editing the `routes.rb` file (config > routes.rb). Add the below line below the first line, so is something like this:
+5. Create a view, named `hello` (app > views > right-click on mainpage > New File). Add a HTML message to this file i.e. `<h1>Hello World!</h1>`
+6. Create the route by editing the `routes.rb` file (config > routes.rb). Add the root route:
 `Rails.application.routes.draw do
   root to: 'mainpage#hello'
   For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end`
-The above example tells Rails that the root directory `/` will serve up our controller's action
-16. Test the application again by typing `bundler exec rails server`
-17. 'Hello World' will be shown
+7. Go back to your terminal, and type `$ rails server`
+8. Open your browser, and a 'Hello World!' will be shown
+```
 
-When you create a Ruby program through the command line, if you run the command `rails generate scaffold`, it will create all the **views, the controller, models and database schema** for you. 
+### Bonus
 
-Below are the steps to do so:
-1. Open `Command Prompt with Ruby and Rails` application
-2. Type `rails new pokedex` - name of solution entirely up to you on know the name it
-3. Type `cd pokedex`
-4. Type `rails generate scaffold Pokemon name:string element: string` - name and element are the column names of the database
-5. After doing so, have to do migration. Type `rake db:migrate`
-6. Type `rails server`
-7. Go to the browser by typing the url which is something like the following: *localhost:(your port number) i.e. localhost:3000*
-8. Once loaded the URL, the web page should show something like *"Yay! You're on Rails!"*
-9. Edit the URL to have the following: */pokemon i.e. localhost:3000/pokemon*
-10. You can play around with the URL - basically is to test out Create, Read, Update, Delete (CRUD)
+You can immediately generate the Model, View, Controller and database schema by running the command `rails generate scaffold`
 
-Congratulation, you have successfully installed Ruby on Rails!! :)
+An example of how it is done:
+```
+1. Open your terminal
+2. `$ rails new (name of solution)` i.e. `$ rails new pokedex`
+3. `$ cd pokedex`
+4. `$ rails generate scaffold (name of database model) [attribute:type]` i.e.`$ rails generate scaffold Pokemon name:string element: string` 
+5. `$ rails db:migrate`
+6. `$ rails server`
+7. Open your browser, type the following: `localhost:(your port number)` i.e. `localhost:3000`
+8. You should see something like *"Yay! You're on Rails!"*
+9. Edit the URL to have the following: `/pokemon` i.e. `localhost:3000/pokemon`
+10. Test out Create, Read, Update, Delete (CRUD)
+```
